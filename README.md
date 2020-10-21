@@ -2,7 +2,7 @@
 
 ---
 
-You can check [Live Demo](link will be here soon)
+You can check [Live Demo](https://katemat.github.io/Toy-Robot-Simulator/)
 
 ---
 
@@ -90,11 +90,11 @@ Expected output
 
 ### Wireframe
 
-[Toy Robot Simulator](/public/wireframe.png)
+![Toy Robot Simulator](/public/wireframe.png)
 
 ### Screenshot
 
-[Toy Robot Simulator app](/public/toy-robot-page.png)
+![Toy Robot Simulator app](/public/toy-robot-page.png)
 
 ### Possible Improvements
 
