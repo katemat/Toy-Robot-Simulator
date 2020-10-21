@@ -5,7 +5,7 @@
 body {
   font-family: 'Press Start 2P', cursive;
   margin: 50px;
-  background-image: url(./public/robot-img.jpg);
+  background-image: url(/robot-img.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
