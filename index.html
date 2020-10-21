@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toy Robot</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <h1>Toy Robot Simulator</h1>
+      <h2>Description</h2>
+      <p>
+        - The application is a simulation of a toy robot moving on a square
+        tabletop, of dimensions 5 units x 5 units.<br />
+        - There are no other obstructions on the table surface. <br />
+        - The robot is free to roam around the surface of the table, but must be
+        prevented from falling to destruction. <br />
+        - The first valid command to the robot is a PLACE command<br /><br />
+        Any movement that would result in the robot falling from the table must
+        be prevented, however further valid movement commands must still be
+        allowed.
+      </p>
+      <h2>Commands:</h2>
+      <ul>
+        <li>
+          PLACE X,Y,F<span class="descr"
+            >- X,Y coordinates between 0 and 4 included, F - facing: NORTH,
+            EAST, SOUTH, WEST</span
+          >
+        </li>
+        <li>
+          MOVE
+          <span class="descr"
+            >- move the toy robot one unit forward in the direction it is
+            currently facing</span
+          >
+        </li>
+        <li>
+          LEFT<span class="descr"
+            >- rotate the robot 90 degrees in the left direction</span
+          >
+        </li>
+        <li>
+          RIGHT<span class="descr"
+            >- rotate the robot 90 degrees in the right direction</span
+          >
+        </li>
+        <li>
+          REPORT<span class="descr">- announce the X,Y and F of the robot</span>
+        </li>
+      </ul>
+      <label for="user-input"></label>
+      <input
+        type="text"
+        id="user-input"
+        placeholder="Enter your command here..."
+        autofocus
+      />
+      <span class="error-msg"></span>
+      <div class="buttons">
+        <button class="run-btn">Run</button>
+        <button class="restart-btn">Restart</button>
+      </div>
+
+      <div class="report-div">
+        <h2 class="log-title">Commands Log:</h2>
+        <span class="commands-log"></span>
+      </div>
+      <div class="report-position">
+        <h2>
+          Your current Position:
+          <span class="current-position"> </span>
+        </h2>
+      </div>
+    </main>
+    <script src="robot.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

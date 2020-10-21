@@ -1,0 +1,55 @@
+*********************************************
+
+The test data to exercise the application
+
+*********************************************
+
+PLACE 0,2,NORTH 
+MOVE 
+LEFT 
+RIGHT
+REPORT
+
+Expected OUTPUT: 0, 3, NORTH
+---------------------------------------------
+
+PLACE 2,2,EAST 
+MOVE
+RIGHT 
+REPORT
+
+Expected OUTPUT: 3, 2, SOUTH
+---------------------------------------------
+
+MOVE  - the ERROR Message will be displayed as the first command should be PLACE command
+PLACE 3,4,EAST 
+MOVE 
+LEFT
+REPORT
+
+Expected OUTPUT: 4, 4, NORTH
+---------------------------------------------
+
+PLACE 2,1,SOUTH 
+PLACE 3,2, EAST
+LEFT 
+MOVE 
+REPORT
+
+Expected OUTPUT: 3, 3, NORTH
+---------------------------------------------
+
+
+PLACE 5,0,NORTH 
+PLACE 4,4 NORTH
+LEFT
+MOVE 
+LEFT
+MOVE 
+MOVE 
+LEFT
+REPORT
+
+Expected OUTPUT: 3, 2, EAST
+---------------------------------------------
+
